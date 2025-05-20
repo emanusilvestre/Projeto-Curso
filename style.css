@@ -1,0 +1,37 @@
+/* Importa a fonte 'Chakra Petch' do Google Fonts com variações de peso e itálico */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Define variáveis de cores reutilizáveis */
+:root {
+    --cor-principal:rgb(253, 181, 224);     /* Cor principal usada no texto geral */
+    --cor-secundaria:rgb(66, 82, 100);    /* Cor secundária usada em títulos */
+    --cor-destaque:rgb(178, 211, 86);      /* Cor de destaque para links e botões */
+}
+
+/* Estilização geral do corpo da página */
+body {
+    font-family: 'Chakra Petch', sans-serif;  /* Define a fonte principal da página */
+    color: var(--cor-principal);              /* Usa a cor principal para o texto */
+}
+
+/* Estiliza os títulos h1, h2 e h5 */
+h1, h2, h5 {
+    color: var(--cor-secundaria);  /* Define a cor dos títulos como a cor secundária */
+    font-weight: 700;              /* Deixa os títulos em negrito */
+}
+
+/* Estiliza elementos com as classes .lead e .btn-link */
+.lead, .btn-link {
+    color: var(--cor-destaque);  /* Aplica a cor de destaque */
+    font-weight: 700;            /* Também os deixa em negrito */
+}
+
+/* Estiliza links normais e botões tipo link quando o mouse passa por cima */
+a, .btn-link:hover {
+    color: var(--cor-principal);  /* Cor principal nos links e hover de botões */
+}
+
+/* Muda a cor dos links quando o mouse passa por cima */
+a:hover {
+    color: var(--cor-destaque);   /* Usa a cor de destaque para o hover */
+}
